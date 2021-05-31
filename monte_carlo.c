@@ -41,3 +41,17 @@ int main(void) {
 
 
 
+float mc_pi(int n)
+{
+int count =0;
+for(int i=0;i<n;i++)
+{
+float p=frandom();
+float q=frandom();
+float d=sqrt(p*p + q*q);
+if(d<1)
+count++;
+}
+return (4*count)/n;
+
+}
