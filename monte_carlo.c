@@ -52,6 +52,6 @@ float d=sqrt(p*p + q*q);
 if(d<1)
 count++;
 }
-return (4*count)/n;
+return (float)(4*count)/n;
 
 }
